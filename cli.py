@@ -31,7 +31,7 @@ def modulus(a: float, b: float) -> float:
     return a % b
 
 def root(a: float, b: float) -> float:
-    return math.pow(a, 1/b)
+    return math.pow(a, 1 / b)
 
 def exponentiation(a: float, b: float) -> float:
     return math.pow(a, b)
@@ -39,7 +39,7 @@ def exponentiation(a: float, b: float) -> float:
 def screen(result: float) -> None:
     clear()
     
-    print(f"{'' * 41}\n Welcome to the Python CLI Calculator! \n{'' * 41}\n\nSupported operations: +, -, , /, %, *.\nPress \"c\" for \"clear\" or \"e\" for \"exit\".\n")
+    print("Welcome to the Python CLI Calculator!\nSupported operations: +, -, , /, %, *.\nPress \"c\" for \"clear\" or \"e\" for \"exit\".\n")
     
     if result is not None:
         print(f"{result}\n")
@@ -100,7 +100,7 @@ def main() -> None:
             print("Invalid operation!\nPlease enter a valid operation!")
             continue
 
-    print("Goodbye!")
+    print("Thanks for using the Python CLI Calculator!")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
